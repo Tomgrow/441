@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Resource Kits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Resource Kits</h1>
+    </header>
+
+    <!-- 资源套件部分 -->
+    <div class="resource-container">
+        <div class="resource-item">
+            <h3>Course 1</h3>
+            <p>$10</p>
+            <input type="number" id="quantity1" value="1" min="1">
+            <button onclick="addToCart(1, 'Course 1', 10)">Add to Cart</button>
+        </div>
+        <div class="resource-item">
+            <h3>Course 2</h3>
+            <p>$15</p>
+            <input type="number" id="quantity2" value="1" min="1">
+            <button onclick="addToCart(2, 'Course 2', 15)">Add to Cart</button>
+        </div>
+        <div class="resource-item">
+            <h3>Course 3</h3>
+            <p>$20</p>
+            <input type="number" id="quantity3" value="1" min="1">
+            <button onclick="addToCart(3, 'Course 3', 20)">Add to Cart</button>
+        </div>
+        <div class="resource-item">
+            <h3>Course 4</h3>
+            <p>$50</p>
+            <input type="number" id="quantity4" value="1" min="1">
+            <button onclick="addToCart(4, 'Course 4', 50)">Add to Cart</button>
+        </div>
+        <div class="resource-item">
+            <h3>Course 5</h3>
+            <p>$85</p>
+            <input type="number" id="quantity5" value="1" min="1">
+            <button onclick="addToCart(5, 'Course 5', 85)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- 购物车部分 -->
+    <div class="cart-container">
+        <h2 class="cart-title">Shopping Cart</h2>
+        <ul class="cart-items" id="cartItems"></ul>
+        <div class="cart-total" id="cartTotal">Total: $0.00</div>
+        <div class="cart-actions">
+            <button onclick="checkout()">Checkout</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Student Name: Tom Lin Yuzhe | RTO Number: 123456</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
